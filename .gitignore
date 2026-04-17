@@ -1,0 +1,19 @@
+# Executáveis (Windows)
+*.exe
+
+# Executáveis (Linux - nome que demos ao compilar)
+hello
+main
+erros
+corrigindo
+entradas
+executavel
+# nome padrão para executaveis é executavel
+
+# Ignorar qualquer arquivo que não tenha extensão (comum em executáveis Linux)
+*
+!*.*
+!*/
+
+# Pastas de configuração do VS Code (opcional)
+.vscode/
