@@ -13,13 +13,21 @@ int main() {
         for(int j=0; j<11; j++) {
 
             if(i==0 or j==0) {
-                if(i != 0 or j != 0) {
+
+                if(j != 0) {
                     matriz[i][j] = j;
                     cout << "numero na linha " << i << " coluna " << j << " é igual a: " << matriz[i][j] << endl;
                 }
-            } 
-                
-            matriz[i+1][j+1] = linha[i] * coluna[j];
+          
+                else if(i != 0) {
+                    matriz[i][j] = i;
+                    cout << "numero na linha " << i << " coluna " << j << " é igual a: " << matriz[i][j] << endl;
+                }
+            }
+            
+            else {
+                matriz[i][j] = linha[i] * coluna[j];
+            }
         }
     }
 
