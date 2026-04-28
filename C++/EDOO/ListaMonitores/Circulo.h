@@ -11,6 +11,9 @@ class Circulo : public Forma {
 
     public:
         Circulo(const string& nome, double raio);
+        double area() const;
+        double perimetro() const;
+        string descricao() const override;
 
 };
 
