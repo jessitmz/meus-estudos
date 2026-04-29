@@ -2,12 +2,7 @@
 *.exe
 
 # Executáveis (Linux - nome que demos ao compilar)
-hello
 main
-erros
-corrigindo
-entradas
-executavel
 # nome padrão para executaveis é executavel
 
 # Pastas de configuração do VS Code (opcional)

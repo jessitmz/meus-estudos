@@ -5,7 +5,7 @@ using namespace std;
 
 class Forma {
 
-    private:
+    protected:
         string nome;
 
     public:
