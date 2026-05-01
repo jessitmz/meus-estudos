@@ -1,7 +1,9 @@
 #ifndef _CIRCULO_H
 #define _CIRCULO_H
+
 #include "Forma.h"
 #include <string>
+
 using namespace std;
 
 class Circulo : public Forma {
