@@ -13,12 +13,12 @@ int main() {
 
             if (i==0 || j==0) {
 
-                if (i==0 && j==0) cout << " ";
-                else if (i==0) cout << j << " ";
-                else cout << i << " ";
+                if (i==0 && j==0) cout << setw(3) << left << " ";
+                else if (i==0) cout << setw(3) << left << j;
+                else cout << setw(3) << left << i;
             }
 
-            else cout << i * j << " ";
+            else cout << setw(3) << left << i * j;
         }
         cout << endl;
     }
