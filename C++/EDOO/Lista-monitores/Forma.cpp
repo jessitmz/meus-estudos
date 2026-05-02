@@ -3,10 +3,9 @@
 
 using namespace std;
 
-Forma::Forma(const string& nome) : nome(nome) {}; // não entendi muito bem corpo de construtor
+Forma::Forma(const string& nome) : nome(nome) {};
 
 string Forma::descricao() const {
-    string saida = nome + " | Area: " + std::to_string(area()) + " | Perimetro: " + std::to_string(perimetro()); 
-    // pq precisa de std:: antes de to_string?
+    string saida = nome + " | Area: " + to_string(area()) + " | Perimetro: " + to_string(perimetro()); 
     return saida;
 }

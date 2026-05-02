@@ -1,9 +1,18 @@
 #include "Circulo.h"
 #include <cmath>
+#include <iostream>
 
 using namespace std;
 
-Circulo::Circulo(const string& nome, double raio) : Forma(nome), raio(raio) {};
+Circulo::Circulo(const string& nome, double raio) : Forma(nome), raio(raio) {
+    try { 
+        if (this->raio < 0) {
+            throw "valor negativo";
+        }
+    } catch (string erro) {
+        cout << "Erro: a medida não deve ser um " << erro;
+    }
+};
 
 double PI = M_PI;
 
