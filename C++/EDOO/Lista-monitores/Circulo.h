@@ -17,6 +17,11 @@ class Circulo : public Forma {
         double perimetro() const;
         string descricao() const override;
 
+        Circulo operator+(const Circulo& outro) const; // soma raios
+        Circulo operator*=(const double escala); // altera a escala do objeto original
+        Circulo operator*(const double escala) const; // novo objeto a partir de outro com escala alterada
+        bool operator==(const Circulo& outro) const; // checa se áreas são iguais
+        string operator<<(const Circulo& circulo) const; // para descrever o objeto no output
 };
 
 #endif
